@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+  <h1>Registration Page</h1>
+  <p>Please fill out this form with required information</p>
+  <!-- fieldset 1 -->
+  <form action="#">
+  <fieldset>
+    <label for="first-name"
+      >First Name:
+      <input type="text" id="first-name" name="name" required
+    /></label>
+    <label for="last-name"
+      >Last Name:
+      <input type="text" id="first-name" name="name" required
+    /></label>
+    <label for="email"
+      >Email Address:
+      <input type="email" id="email" name="email" required
+    /></label>
+    <label for="password"
+      >Password:
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        pattern="[a-z0-5]{8,}"
+    /></label>
+  </fieldset>
+  <!-- end of fieldset1-->
+  <!-- fieldset 2 -->
+  <fieldset>
+    <label for="personal-account"><input type="radio" class="inline"id="personal-account" name="pc"/>Personal Account </label>
+    <label for="business-account"> <input type="radio" id="business-account" class="inline" name="pc"/>Business Account</label>
+    <label for="termsconditions"><input type="checkbox" class="inline" id="termsconditions" name="tc"/>I accept <a href="#">terms and conditions </a></label>
+  </fieldset>
+  <!-- fieldset 3-->
+  <fieldset>
+    <label for="file">Upload a profile picture: <input type="file" id="file" name="file"/></label>
+
+    <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+    <label for="dropdown"> How did you hear about us? 
+        <select id="dropdown">
+            <option>select</option>
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+        </select>
+    </label>
+    <label for="bio"> Provide a bio: 
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like to code on beach....."></textarea>
+    </label>
+  </fieldset>
+  <!--end of fieldset3-->
+  <input type="submit" value="Submit"></input>
+</form>
+</body>
+</html>
